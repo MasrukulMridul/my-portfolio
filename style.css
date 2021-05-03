@@ -1,4 +1,29 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color:#333;
+}
 
+.header{
+    text-align: center;
+    color: black;
+    padding:1rem;
+    position: relative;
+}
+.header:after{
+   content: '';
+   position:absolute;
+   bottom: 0;
+   left:50%;
+   transform: translate(-50%);
+   height:4px;
+   width: 100px;
+   background-color: #2ecc71;
+}
 .half-width{
     width: 40%;
    float: left;
@@ -16,11 +41,12 @@
 
 }
 .background-color{
-    background-color:antiquewhite;
+    /* background-color:antiquewhite; */
+    background-image: url('images/background.jpg');
 }
 
 /* My Skill */
-.wrap{
+ .wrap{
   max-width: 60%;
   margin: 150px auto 0;
 }
@@ -70,7 +96,7 @@
     width:50%;
 }
 .bar:nth-child(4) span:before{
-    width:65%;
+    width:85%;
 }
 .bar:nth-child(5) span:before{
     width:45%;
@@ -79,7 +105,7 @@
     width:30%;
 }
 
-abbr{
+/* abbr{
     width: 60px;
     display: inline-block;
     height:35px;
@@ -89,15 +115,15 @@ abbr{
     top:32px;
     z-index: 1;
     background:linear-gradient(to left, #ff0057, #ffeb3b);
-    /* box-Shadow:0 5px 20px  #ff0057, 0 5px 20px  #ffeb3b; */
+    
     animation:count 4s ease;
-}
+} */
 @keyframes count{
     from{
         left:0%;
     }
 }
-.bar:nth-child(1) abbr{
+/* .bar:nth-child(1) abbr{
     left:90%;
 }
 .bar:nth-child(2) abbr{
@@ -107,14 +133,14 @@ abbr{
     left:50%;
 }
 .bar:nth-child(4) abbr{
-    left:65%;
+    left:85%;
 }
 .bar:nth-child(5) abbr{
     left:45%;
 }
 .bar:nth-child(6) abbr{
     left:30%;
-}
+}  */
 
 /* project */
 .nike-card{
